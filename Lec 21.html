@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Selected Checkboxes</title>
+    <script>
+        function logic() {
+
+            setTimeout("alert('welcome')",3000)
+            document.write("welcome to timer clock");
+
+            var elements = document.getElementsByName('skills');
+            var selectedItems = "";
+            for(let i =0; i < elements.length; i++){
+                if (elements[i].checked == true){
+                    selectedItems += elements[i].value + '<br>';
+                }
+            }
+            document.getElementById('output').innerHTML = selectedItems;
+        }
+        //setTimeout('logic',3000)
+        setInterval("logic()",3000)
+    </script>
+</head>
+<body>
+    Select Your Skills :
+    <input type="checkbox" name="skills" value="C"> C 
+    <input type="checkbox" name="skills" value="Python"> Python 
+    <input type="checkbox" name="skills" value="Java"> Java
+    <input type="checkbox" name="skills" value="HTML"> HTML 
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    <input type="checkbox" name="skills" value="C#"> C# 
+
+    <br><br>
+    <button onclick="logic()">View Selected</button>
+    <br><br>
+    <div id="output"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+* {
+    background-color: lightcoral;
+    margin: 10px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p1 {
+    color: blue;
+    text-align: justify;
+    font-size: 20px;
+    background-color: yellow;
+}
+
+.p3 {
+    color: red;
+    background-color: pink;
+    text-align: justify;
+}
+
+input[type='text'] {
+    color: blue;
+    background-color: yellow;
+    font-size: 25px;
+}
+

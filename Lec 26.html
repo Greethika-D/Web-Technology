@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#box').append("Enter the Data : <input type=text>")
+            })
+            $('#btn2').click(function(){
+                $('#box').prepend("<button>Click</button>")
+            })
+            $('#btn3').click(function(){
+                $('#box').after("<input type=checkbox>Apple  <input type=checkbox>Orange")
+            })
+            $('#btn4').click(function(){
+                $('#box').before("Comments : <textarea rows=3 cols=8> </textarea>")
+            })
+            $("#delete").click(function(){
+                $("#fruits").remove()
+            })
+            $("#empty").click(function(){
+                $("#fruits").empty()
+            })
+            $("#add").click(function(){
+                $("#box2").apppend("<div>input type='text'></div><br>")
+            })
+            $("#remove").click(function(){
+                $("#box2").children().last().remove()
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">After</button>
+    <button id="btn4">Before</button>
+    <br><br>
+    <div id="box" style="border: 1px solid blue; height: 250px; width: 300px;">
+        <h1>Welcome to Division</h1>
+    </div>
+    <br><br>
+
+    <button id="delete">Remove</button>
+    <button id="empty">Empty</button>
+    <br><br>
+
+    <ol id="fruits">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Pineapple</li>
+    </ol>
+    <br><br>
+
+    <button id="add">Add textbox</button>
+    <button id="remove">remove textbox</button>
+    <div id="box2"></div>
+</body>
+</html>

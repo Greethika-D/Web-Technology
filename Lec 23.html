@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //action or button click
+            $('#addbtn').click(function(){
+                alert('welcome')
+                var n1 = parseInt($('#n1').val())
+                var n2 = parseInt($('#n2').val())
+                var result = n1 + n2
+                //to display data inside div tag
+                $('#output1').html('<b>Result : ' + result)
+                //to dispaly data inside an input element
+                $('#output2').val(result)
+            })
+            $('#multi').click(function(){
+                var n1 = parseInt($('#n1').val())
+                var n2 = parseInt($('#n2').val())
+                var product = n1 * n2
+                $('output3').html('<b>Product : ' + product)
+            })
+        })
+    </script>
+</head>
+<body>
+    Number 1 : <input type="text" id="n1"><br><br>
+    Number 2 : <input type="text" id="n2"><br><br>
+    <button id="addbtn">Add</button>
+    <button id="mutli">Multiply</button>
+    <div id="output1"></div>
+    <input type="text" readonly id="output2">
+    <div id="output3"></div>
+</body>
+</html>

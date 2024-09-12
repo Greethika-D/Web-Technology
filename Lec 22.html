@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function init(){
+            car = document.getElementById('box')
+            car.style.position = 'relative'
+            car.style.left = '10px'
+        }
+        function move(){
+            car.style.left = parseInt(car.style.left) + 2 + 'px'
+            cartimer = setTimeout(move,100)
+        }
+        function start(){
+            timer = setInterval(animate, 1000)
+        }
+        function animate(){
+            var box = document.getElementById('box')
+            var colors = ['yellow', 'pink','green','orange','gray','black']
+            var randomNumber = Math.floor(Math.random() * 7)
+            box.style.backgroundColor = colors[randomNumber]
+            /*if (box.style.backgroundColor == 'pink'){
+                box.style.backgroundColor = 'yellow'
+            }
+            else {
+                box.style.backgroundColor = 'pink'
+            }*/
+           
+        }
+        function stop(){
+            //clearInterval(timer)
+            clearTimeout(cartimer)
+            }
+            
+    </script>
+</head>
+<body onload="init()">
+    <div id="box" style="width: 100px; height: 150px; background: url('Agri9.jpg') no-repeat center; "></div>
+    <br><br>
+    
+    <button onclick="start()">Start Animation</button>
+    <button onclick="move()">Move Car</button>
+    <button onclick="stop()"> Stop Animation</button>
+</body>
+</html>

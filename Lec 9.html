@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="">File Upload</label>
+            <input type="file" required>
+            <br><br>
+            <progress max="100" value="45"></progress><span> 45%</span> File Uploading...
+            <br><br>
+
+            <label for="">Name</label>
+            <input type="text" required  value="John" readonly autofocus>   
+            <br><br>
+
+            <label for="">last name</label>
+            <input type="text" required placeholder="Type your name" maxlength="10" name="cust_name">
+            <br><br>
+
+            <label for="">Age</label>
+            <input type="number" min="18" max="60">
+            <br><br>
+
+            <label for="">Choose Password</label>
+            <input type="password" pattern="[a-z A-Z!@#$%^&*0-9]{8,}" required>
+            <span>(Password must be 8 characters long)</span>
+            <br><br>
+
+            <button type="submit" >Submit</button>
+        </form>
+    </body>
+</html>

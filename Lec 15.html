@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Hello! Welcome to javascript")
+        document.write("Welcome to CSE<br>")
+        document.write("Next line<br>")
+
+        console.log("Error")
+        console.log("status")
+
+        var a = 10
+        var b = 40
+        var c =  "4"
+        var sum = a + b + c
+        document.write("Result : " + sum + "<br>")
+
+        var r = a ** 2
+        document.write("Exponent : " + r + "<br>")
+
+        const pi = 3.14
+
+        var numbers = [10,20,30,40,50]
+        document.write(numbers[0] + "<br>")
+
+        function add(num1, num2){
+            return num1+num2
+        }
+        document.write("sum : " + add(10,20) + "<br>")
+
+        function logic(){
+            var value = document.getElementById('msg').value
+            alert("your message is : " + value)
+            document.getElementById('output').innerHTML = 'You have entered : ' + value
+        }
+
+    </script>
+</head>
+<body>
+   <label for="">Enter the data : </label>
+   <input type="text"id="msg">
+   <br><br>
+   <button onclick="logic()"> submit</button> 
+   <div id="output"></div>
+</body>
+</html>

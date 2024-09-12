@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDialog() {
+            //var data = prompt("Enter the password");
+            var dollar = parseInt(prompt("Enter the number : "));
+            var inr = dollar * 83;
+            //document.getElementById('output').innerHTML = data;
+            document.getElementById('output').innerHTML = "INR " + inr;
+        }
+        function amount() {
+            var amt = parseInt(document.getElementById('amt').value)
+            var status = confirm("Amount is Rs. " + amt + "\n Do you want to confirm?")
+        }
+
+        function changStyle() {
+            const elememt = document.getElementById('box')
+            elememt.style.width="300px"
+            elememt.style.height="100px"
+            elememt.style.backgroundColor="yellow"
+            elememt.style.color="blue"
+            elememt.style.marginLeft="100px"
+            elememt.style.padding="20px"
+        }
+
+        function changStyle2(){
+            const elememt = document.getElementById('box')
+            elememt.style.width="200px"
+            elememt.style.height="150px"
+            elememt.style.backgroundColor="blue"
+            elememt.style.color="white"
+           
+        }
+    </script>
+</head>
+<body>
+    Enter the amount : <input type="text" id ='amt'><br><br>
+    <button onclick="amount()">amount</button><br><br>
+    <button onclick="showDialog()">click here</button>
+    <div id="output"></div>
+    <br>
+    <div onmouseover="changStyle()" onmouseout="changStyle2()" id="box" style="padding: 20px; margin-left:100px; height: 150px; width: 200px; background-color: blue; color: white;">Section</div>
+    <br>
+    <button onclick="changStyle()">Change Style</button>
+</body>
+</html>

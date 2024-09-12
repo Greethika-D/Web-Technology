@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <style>
+            
+            .b1 {
+                background-color: yellow;
+            }
+            .b2 {
+                background-color: brown;
+            }
+            .b3 {
+                background-color: green;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .banner {
+                height: 500px;
+                background-image: url('Agri pic 1.jpg');
+                size: 20px 20px;
+                border: 2px solid red;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                opacity: 0.3;
+
+            }
+
+            .banner:hover {
+                opacity: 1;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="b1">Box 1</div>
+            <div class="b2">Box 2</div>
+            <div class="b3"> Box 3</div>
+        </div>
+        <hr>
+        <div class="banner"></div>
+        
+    </body>
+</html>

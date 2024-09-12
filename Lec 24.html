@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#dollar').keyup(function(){
+                var dollar = $('#dollar').val()
+                var rupee = dollar * 83.2
+                $('#inr').html('<b>₹ ' + rupee)
+            })
+            $('#color').change(function(){
+                var color = $('#color').val()
+                $('#selectedcolor').html(color)
+                $('body').css('background-color',color)
+            })
+            $('#btn').click(function(){
+                $('.box').css({'color':'red','font-size':'20px'})
+            })
+        })
+    </script>
+</head>
+<body>
+    <label for="">Dollar : </label>
+    <input type="text" id="dollar"><br><br>
+    <br><br>
+    <div id="inr"></div>
+    <br>
+    Select : 
+    <select id="color">
+        <option>red</option>
+        <option>blue</option>
+        <option>yellow</option>
+        <option>green</option>
+    </select>
+    <br><br>
+    <div id="selectedcolor"></div>
+    <br>
+    <button id="btn">Click Here</button>
+    <div class="box">Welcome to CSE</div>
+</body>
+</html>

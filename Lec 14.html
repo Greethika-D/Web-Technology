@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Document</title>
+
+        <style>
+            
+            input[type=text] {
+                background-color: pink;
+                font-size: 20px;
+                color: blue;
+                border: none;
+                outline: none;
+                border-radius: 8 px;
+                padding: 12px;
+            }
+            input[type=text]:focus{
+                background-color: white;
+                border: 1px solid blue;
+                outline: 1px solid blue;
+            }
+            .shade {
+                height: 200px;
+                width: 200px;
+                font-size: 20px;
+                background-color: rgb(45, 67, 65);
+                box-shadow:5px 5px 2px #000000;
+            }
+            .shade:hover{
+                background-color: red;
+            }
+            a {
+                text-decoration: none;
+                border: 1px solid blue;
+                padding: 20px;
+            }
+            a:hover {
+                background-color: wheat;
+                color: white;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <label for="">Enter your</label>
+        <input type="text" placeholder="Full Name">
+        <br><br><br>
+        <div class="shade">
+            box shadow
+        </div>
+        <br><br>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <br><br>
+    </body>
+</html>
